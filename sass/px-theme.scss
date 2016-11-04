@@ -3,17 +3,14 @@
 //
 
 @import "px-colors-design/_settings.colors.scss";
-@import "px-defaults-design/_settings.defaults.scss";
-@import "px-mixins-design/_tools.mixins.scss";
+// @import "px-defaults-design/_settings.defaults.scss";
+// @import "px-mixins-design/_tools.mixins.scss";
 
-$fa-font-path       : "../font-awesome/fonts";
-$fa-version         : "4.4.0" !default;
 $predix-font-family : "GE Inspira Sans", sans-serif !default;
 
 @import "px-typography-design/_base.typography.scss";
 
 :root{
-  @import "px-iconography-design/_base.iconography.scss";
 
   --px-app-nav-background-color:            $gray10;
   --px-app-nav-link-text-color:             $white;
@@ -24,45 +21,11 @@ $predix-font-family : "GE Inspira Sans", sans-serif !default;
 
 
   --px-font-family: $predix-font-family;
+  font-family: $predix-font-family;
 
 }
-
-
-//
-// page theme variables
-//
-
-$px-page-html-background-color: $gray9;
-$px-page-link-color: $gray5;
-$px-page-spine-border-color: $gray8;
-$px-page-spine-text-color: $white;
-$px-page-bold-text-color: $gray3;
-$px-page-card-border-color: $gray3;
-$px-page-card-background-color: $white;
-$px-page-card-text-color: $black;
-$px-page-card-paragraph-text-color: $gray5;
-$px-page-banner-text-color: $gray4;
-$px-page-banner-meatball-color : $gray4;
-$px-page-main-content-area-background-color: $graybg;
 
 html {
   font-family: $predix-font-family;
   font-size: $inuit-base-font-size;
-}
-
-:host {
-  font-family: $predix-font-family;
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
-  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
-    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
-    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
-    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
-    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
-//  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
-  font-weight: normal;
-  font-style: normal;
 }
